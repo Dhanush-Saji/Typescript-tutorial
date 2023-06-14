@@ -5,17 +5,23 @@ function addTwo(num){
 
 addTwo('4')
 
+/* --------------------------------------------- */
+
 function addTwoWithType(num:number){
     return num + 2;
 }
 
 addTwoWithType(5)
 
+/* --------------------------------------------- */
+
 //Multiple parameters in a function
 function signup(name:string, password:string,isAuth:boolean){
 
 }
 signup('Dhanush','password',true)
+
+/* --------------------------------------------- */
 
 //Giving default value for the functions
 const login = (name:string,pass:string,isAuth:boolean = true)=>{
