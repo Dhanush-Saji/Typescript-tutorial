@@ -33,3 +33,14 @@ function getDbId(id:number | string){
 }
 getDbId(5)
 getDbId('565')
+
+/* --------------------------------------------- */
+
+let data:number[] | string[] = [1,2,3]
+// let data1:number[] | string[] = [1,2,3,"df"] This won't work because 'number[] | string[]' means either the whole array should be number or string
+let data2:(number | string)[] = [1,2,3,"df"] 
+
+/* --------------------------------------------- */
+
+let seats:'front'|'back'|'window';
+//you can only insert any of these data to the variable 'seats'
