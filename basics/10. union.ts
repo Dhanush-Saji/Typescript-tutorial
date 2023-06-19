@@ -4,7 +4,7 @@ clientCode = 55;
 
 /* --------------------------------------------- */
 
-type User = {
+type UserUnion = {
     name: string,
     id:number
 }
@@ -14,8 +14,8 @@ type Admin = {
     isAuth: boolean
 }
 
-let user:User | Admin = {name: 'John', id:451}
-user = {name: 'Dhanush', id:89,isAuth: true}
+let userUnion:UserUnion | Admin = {name: 'John', id:451}
+userUnion = {name: 'Dhanush', id:89,isAuth: true}
 
 /* --------------------------------------------- */
 

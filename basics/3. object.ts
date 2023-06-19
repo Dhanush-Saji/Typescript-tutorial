@@ -5,10 +5,10 @@ function createCourse():{}{
 
 /* --------------------------------------------- */
 
-function createUser({ name, isAuth }: { name: string, isAuth: boolean }){
+function createUserObject({ name, isAuth }: { name: string, isAuth: boolean }){
 
 }
-createUser({name:'Dhanush',isAuth:false})
+createUserObject({name:'Dhanush',isAuth:false})
 
 /* --------------------------------------------- */
 

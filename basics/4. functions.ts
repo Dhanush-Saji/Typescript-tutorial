@@ -7,11 +7,11 @@ addTwo('4')
 
 /* --------------------------------------------- */
 
-function addTwoWithType(num:number){
+function addTwoWithTypeNew(num:number){
     return num + 2;
 }
 
-addTwoWithType(5)
+addTwoWithTypeNew(5)
 
 /* --------------------------------------------- */
 

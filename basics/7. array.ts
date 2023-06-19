@@ -19,11 +19,11 @@ const superPower:Array<number> = []
 /* --------------------------------------------- */
 
 //Let me show you another way of doing the same thing
-type User={
+type UserArray={
     name:string,
     isActive:boolean,
 }
-const allUsers:User[] = []
+const allUsers:UserArray[] = []
 allUsers.push({name: 'Superman', isActive:true})
 
 /* --------------------------------------------- */
