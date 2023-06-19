@@ -1,3 +1,8 @@
+const exampleObj:{prop1:string,prop2:boolean} = {prop1:'Dave',prop2:true}
+exampleObj.prop1 = 'true'
+
+/* --------------------------------------------- */
+
 //This means the function is returning an object.
 function createCourse():{}{
     return {}
