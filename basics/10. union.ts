@@ -44,3 +44,7 @@ let data2:(number | string)[] = [1,2,3,"df"]
 
 let seats:'front'|'back'|'window';
 //you can only insert any of these data to the variable 'seats'
+
+/* --------------------------------------------- */
+
+const testArray:(number | string)[][] = [[0,'jhjhj'],[1,'hhhh']]
