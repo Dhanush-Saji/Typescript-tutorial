@@ -1,4 +1,4 @@
-//There are some cases we might not sure about the data types or there is  chance of different data types
+//There are some cases we might not be sure about the data types or there is a chance of different data types
 let clientCode:number | string = 'hello';
 clientCode = 55; 
 
@@ -20,7 +20,7 @@ userUnion = {name: 'Dhanush', id:89,isAuth: true}
 /* --------------------------------------------- */
 
 // function getDbId(id:number | string){
-//     id.toLowerCase() //This won't work. You can't perform such operation if type is like this
+//     id.toLowerCase() //This won't work. You can't perform such an operation if the type is like this
 // }
 // getDbId(5)
 // getDbId('565')

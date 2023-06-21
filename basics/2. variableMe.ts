@@ -18,4 +18,14 @@ let hero;
 function getHero(){
     return 'Thor'
 }
-hero = getHero(); // If you hover over the hero you can see the data type is 'any', which is given by the typescript when the data type isn't predictable. But this isn't a good practise.
+hero = getHero(); // If you hover over the hero you can see the data type is 'any', which is given by the typescript when the data type isn't predictable. But this isn't good practise.
+
+/* When we don't know what the key is, we can use the type'Record'. It requires two arguments */
+const dontKnowKey1:Record<string,boolean> = {
+    loading: false,
+    isAuth:true
+}
+const dontKnowKey2:Record<string,number[]> = {
+    loading: [1,2,3],
+    isAuth:[1,2,3]
+}
