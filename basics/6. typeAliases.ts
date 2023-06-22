@@ -16,7 +16,7 @@ type varConfig = {
     name:string,
     email:string,
     isActive:boolean,
-    creditCard?:number //When you give '?' after the key, which means that paramter is optional
+    creditCard?:number //When you give '?' after the key, which means that the paramter is optional
 }
 let variable1:varConfig = {_id:'1234', name:'Dhanush', email:'', isActive:false}
 
@@ -25,7 +25,7 @@ variable1.name = 'Dhanush Saji'
 
 /* --------------------------------------------- */
 
-//In the below code we have 3 types and I'm combining first two of them to the third one
+//In the below code we have 3 types and I'm combining the first two of them into the third one
 type cardName = {cardName:string}
 type cardDate = {cardDate:string}
 

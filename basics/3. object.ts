@@ -23,7 +23,7 @@ function createUserReturn():{name:string,isAuth:boolean}{
 
 /* --------------------------------------------- */
 
-//There is one problem with the Typescript, Here I didn't defined the email, but still Typescript allow me to pass that in the function call. That's a problem from the Typescript side.
+//There is one problem with the Typescript, Here I didn't define the email, but still, Typescript allows me to pass that in the function call. That's a problem from the Typescript side.
 function createUserNew({ name, isAuth }: { name: string, isAuth: boolean }){
     console.log(name, isAuth);
     }

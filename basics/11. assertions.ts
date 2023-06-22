@@ -19,4 +19,4 @@ const addOrConcat = (a: number, b: number,c:'add'|'concat'): number | string =>{
 }
 let myVal:string = addOrConcat(2,2,'add') as string
 
-let nextVal:number = addOrConcat(2,2,'concat') as number //As we know we're passing 'concat', and we only string as return. But we said the TypeScript that it will return a number by 'as string' and TypeScript will blindly believe that. So use carefully this property.
+let nextVal:number = addOrConcat(2,2,'concat') as number //As we know we're passing 'concat', and we only string as a return. But we said the TypeScript that it will return a number by 'as string' and TypeScript will blindly believe that. So use carefully this property.
