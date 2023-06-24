@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import React, { useState } from 'react';
+
 
 type Todo = {
     id:number;
@@ -10,6 +11,7 @@ const Todos = () => {
     const [text, settext] = useState<string>("");
     const [todos, settodos] = useState<Todo[]>([])
   return (
+    <>
     <div style={{display:'flex',flexDirection:'column',gap:'1rem'}}>
         <input type="text" value={text} onChange={e =>settext(e.target.value)} style={{padding:'0.5rem 2rem'}} />
         <button onClick={()=>{
@@ -23,6 +25,7 @@ const Todos = () => {
             }
         </div>
     </div>
+    </>
   )
 }
 
