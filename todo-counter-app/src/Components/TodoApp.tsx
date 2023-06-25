@@ -8,11 +8,18 @@ type Todos = {
 };
 const TodoApp = () => {
   const [todos, settodos] = useState<Todos[]>([]);
+  const addTodo = (content:string) =>{
+    settodos([...todos,{
+      id:Date.now(),
+      content,
+      isCompleted: false
+    }])
+  }
   return (
     <div>
-      <TodoInput />
+      <TodoInput addTodo={addTodo} />
       {todos.map((todo) => (
-        <Todo />
+        <Todo key={todo.id} {...todo} />
       ))}
     </div>
   );

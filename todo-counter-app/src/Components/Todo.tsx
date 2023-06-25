@@ -1,8 +1,17 @@
 import React from 'react'
-
-const Todo = () => {
+type TodoItemContent = {
+  id:number,
+  content:string,
+  isCompleted:boolean
+}
+const Todo = ({id,content,isCompleted}:TodoItemContent) => {
   return (
-    <div>Todo</div>
+    <div>
+      <div>
+        <span>{content}</span>
+        <span>{isCompleted?"Compledted":"Not completed"}</span>
+      </div>
+    </div>
   )
 }
 
