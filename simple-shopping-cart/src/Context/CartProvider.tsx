@@ -1,4 +1,4 @@
-import React,{ createContext, useEffect, useState } from "react"
+import React,{ createContext, useState } from "react"
 
 export type CartType = {
     id:number,
@@ -32,7 +32,7 @@ export const CartProvider = ({children}:ChildrenType) =>{
         setcartProducts(filteredData)
     }
     return(
-        <CartContext.Provider value={{cartProducts,addToCart,deleteFromCart}}>
+        <CartContext.Provider value={{addToCart,cartProducts,deleteFromCart}}>
             {children}
         </CartContext.Provider>
     )

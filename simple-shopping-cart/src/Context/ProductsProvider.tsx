@@ -18,7 +18,6 @@ export const ProductProvider = ({children}:ChildrenType) =>{
             try {
                 const response = await fetch("https://fakestoreapi.com/products/");
                 const data = await response.json();
-                console.log(data);
                 return data;
             } catch (err) {
                if(err instanceof Error) console.log(err.message)

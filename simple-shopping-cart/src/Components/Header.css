@@ -1,9 +1,28 @@
 .header{
     display: flex;
-    width: 100%;
     justify-content: space-between;
+    background-color: white;
+    padding: 0 2rem;
 }
 .header > div{
     display: flex;
-
+    align-items: center;
+    /* border: 1px solid black; */
+    padding: 0 1rem;
+    background-color: rgba(127, 172, 255, 0.219);
+}
+.header > div > img{
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5rem;
+}
+.cartAmount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(127, 172, 255);
+    padding: 0.2rem;
 }

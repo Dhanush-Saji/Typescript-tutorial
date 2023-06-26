@@ -1,0 +1,27 @@
+.cartImagesGrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+.productImagesGrid div{
+    background-color: rgb(74, 156, 170);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0.5rem;
+}
+.productImagesGrid div >  button{
+    border: 2px solid transparent;
+    padding: 0.5rem 0.8rem;
+    border-radius: 8px;
+    margin-top: auto;
+    cursor: pointer;
+    transition: all 200ms ease-out;
+}
+.productImagesGrid div >  button:hover{
+    border: 2px solid rgb(35, 95, 105);
+}
+.productImagesGrid div img{
+    height: 150px;
+}
